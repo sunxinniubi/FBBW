@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/home.min.css"/>
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script src="js/Ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/cookie.min.js" ></script>
+		<link rel="stylesheet" href="css/iconfont.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/mycart.min.css"/>
+	</head>
+
+	<body>
+		<div class="top-nav">
+			<div class="wrapper">
+				<ul>
+					<li>
+						您好，
+						<a href="login.html">请登录</a>
+						<a class="pink" href="reg.html" target="_blank">&nbsp;免费注册</a>
+					</li>
+					<li class="seg"></li>
+					<li><a href="#">商家入驻</a></li>
+					<li class="seg"></li>
+					<li><a href="#">贝贝商家中心</a></li>
+					<li class="seg"></li>
+					<li>
+						<div class="dropdown">
+							<div class="dropdown-default">
+								<span class="iconfont">&#xe615;</span>
+								<a href="#">帮助中心</a>
+								<span class="iconfont xjt">&#xe67f;</span>
+							</div>
+						<ul class="dropdown-list">
+							
+							<li><span class="iconfont">&#xe601;</span><a href="#">联系客服</a></li>
+							
+						</ul>
+						</div>
+						</li>
+					<li class="seg"></li>
+					<li>
+						<div class="dropdown">
+							<div class="dropdown-default">
+								<a href="#">关注</a><span class="iconfont xjt">&#xe67f;</span>
+							</div>
+						<div class="block-fllow">
+							<dl class="wechat">
+								<dd>微信号：beibeiclub</dd>
+								<dt><img src="images/40450807220001_158x158.jpg" title="微信扫一扫" /></dt>
+								<dd>订阅贝贝官方微信</dd>
+							</dl>
+							<dl class="social">
+								<dd>
+									<a href="#" title="关注贝贝新浪微博"><img src="images/weibo_45x45.png"/></a>
+								</dd>
+								<dd>
+									<a href="#" title="关注贝贝QQ空间"><img src="images/qzone_45x45.png"/></a>
+								</dd>
+							</dl>
+							
+						</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+<div id="head">
+			<div id="main_logo">
+				<div class="wrapper">
+					<a id="logo" href="#">
+						<img src="images/1.jpg" />
+					</a>
+					<a href="#" class="main-logo-slogan">
+						<img src="images/main-slogan.png" />
+					</a>
+					<div class="nav-cart">
+						<a class="top-cart" href="mycart.html"><span class="iconfont icon-cart">&#xe600;</span>我的购物车<span class="iconfont">&#xe60e;</span></a>
+						<div class="cart-list">
+						</div>
+						
+					</div>
+						
+				</div>
+			</div>
+			<div id="main-nav">
+				<div class="wrapper">
+					<div class="nav-item">
+						<a class="active" href="index.html">首页</a>
+						<a href="#">贝贝APP</a>
+						<a href="#">贝店</a>
+						<a href="#">友团</a>
+						<a href="#">贝贷</a>
+						<a href="#">商家入驻</a>
+						<span class="hot-icon" href="#"><img src="images/hot_54x36.png" /></span>
+					</div>
+					<div class="s-box">
+						<div class="category">
+							<div class="cat-btn">
+							<span>在售分类</span><span class="iconfont">	&#xe67f;</span>
+							<div class="cat-list">
+								<ul class="bn-cate"></ul>	
+							</div>
+							</div>
+							<input type="text" class="search" placeholder="搜索商品或品牌" />
+							<div class="search-btn iconfont">&#xe612;</div>
+							<ol class="searchRes"></ol>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="side">
+			<ul class="side-panel">
+				<li class="side-cart sidenav"><span class="iconfont icon">&#xe622;</span><span class="num">0</span>
+					<div class="cart-list">
+						<div class="cart-tit"><span class="iconfont">&#xe622;</span>购物车是空的</div>
+							<ul class="list">
+								<li><span>快去挑选商品吧!</span></li>
+							</ul>							
+							<div class="cart-bottom">
+							<span class="total">小计：<span class="totalPrice">￥0.00</span></span>
+							<a href="#" class="cart-btn">去购物车结算</a>
+						</div>
+							
+						</div></li>
+				<li class="side-phone sidenav">
+					<div class="ewm">
+						<p>下载手机APP</p>
+						<p>随时随地看上新</p>
+						<img src="images/40450807220001_158x158.jpg" />
+					</div>
+					<span class="iconfont icon">&#xe611;</span></li>
+				<li class="kfzx sidenav"><span class="iconfont icon">&#xe601;</span><span class="s-kfzx">客服在线</span></li>
+				<li class="r-top sidenav"><span class="iconfont icon">&#xe628;</span><span class="s-top">返回顶部</span></li>
+		</ul>
+		</div>
+		<div class="nav-t"></div>
+		
+		<div id="container">
+			<div class="sub-nav">
+				<div class="wrapper">
+					<ul>
+						<li class="sub-nav-logo">
+						<a href="#"><img src="images/sub-nav-logo.png"/></a>
+						</li>
+						<li><a href="#">童装</a></li>
+						<li><a href="#">母婴</a></li>
+						<li><a href="#">居家</a></li>	
+						<li><a href="#">美食</a></li>	
+						<li><a href="#">女装</a></li>
+						<li><a href="#">鞋包</a></li>	
+						<li><a href="#">美妆</a></li>	
+						<li><a href="#">奶粉</a></li>
+						<li><a href="#">纸尿裤</a></li>	
+									
+						<li class="oversea"><a href="#"><img src="images/oversea_icon_16x16.png"/> 全球购</a></li>
+						<li class="tomorrow"><a href="#"><span class="iconfont">&#xe695;</span>精彩预告</a></li>					
+						<li class="tuan"><a href="#"><img src="images/f45259dc52970a6ea21d62531e9a96b0.png"/> 限量购</a></li>					
+					</ul>
+					
+				</div>
+				
+			</div>
+			<div class="carousel">
+				<ul class="slider-img">
+					<li class="show"><img src="images/23153758725915_1400x320.jpg" /></li>
+					<li><img src="images/23191961455915_1400x320.jpg" /></li>
+				</ul>
+				
+				<div class="wrapper">
+				<ul class="current">
+					<li class="active"></li>
+					<li></li>
+				</ul>
+				<ul class="carousel-tag">
+					<li>
+						<a href="detail.html">
+						<img src="images/8.jpg" />
+						<p>限量999</p>
+						<p class="price">￥25.9</p>
+						</a>
+					</li>
+					<li>	<a href="detail.html">
+						<img src="images/8.jpg" />
+						<p>限量999</p>
+						<p class="price">￥99.9</p>
+						</a>
+					</li>
+					<li>
+						<a href="detail.html">
+							<img src="images/8.jpg" />
+							<p>限量999</p>
+							<p class="price">￥299</p>
+						</a>
+					</li>
+					<li>
+						<a href="detail.html">
+							<img src="images/8.jpg" />
+							<p>限量999</p>
+							<p class="price">￥676</p>
+						</a>
+					</li>
+				</ul>
+			</div>	
+			</div>
+			<div id="content" class="wrapper">
+				<div class="content-title">
+					<h2>今日特卖</h2>
+					<span class="dot"></span>
+					<span>每天9点准时上新</span>
+				</div>
+				<div class="c-left" id="c-left">
+					<!--<div class="c-left-list" id="c-left-list">
+						<img src="images/10.jpg"/>
+						<p class="title">儿童休闲鞋网面运动鞋</p>
+						<div class="price-info">
+							<p class="cur-price">
+								<span class="currency">￥</span>
+							    <span class="price-num">49</span>
+							  <span class="price-little">.00</span>
+							</p>							
+							<span class="old-price">￥138</span>
+						<span class="discount-desc">3.6折</span>
+						</div>
+					</div>-->
+                </div>
+				<div class="c-left" id="c-left1"></div>	
+				<div class="c-right">			
+					<h2 class="hot-title">热卖排行榜</h2>
+					<div class="hot">						
+						<ul class="hot-tag">
+							<li class="active">童鞋</li>
+							<li>童装</li>
+							<li>玩具</li>
+							<li>用品</li>
+						</ul>
+						<div class="clear"></div>
+						<ul class="tz-item show">
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">夏季新款宝宝短袖</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">45.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">摇摇车</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">399.00</span></span>
+								<span class="old-price">￥699</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">摇摇车</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+						</ul>
+																		
+						<ul class="tz-item">
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">电子琴</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">996.00</span></span>
+								<span class="old-price">￥1999</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">奶粉</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">366.00</span></span>
+								<span class="old-price">￥509</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							
+							<li><a href="detail.html">						
+								<img src="images/6.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+						</ul>
+						
+						<ul class="tz-item">
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">夏季清爽凉鞋</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">运动休闲</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+						</ul>
+												
+						<ul class="tz-item">
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+							
+							<li><a href="detail.html">						
+								<img src="images/8.jpg" />
+								<div class="item-info">
+									<p class="tit" href="#">【3件装】夏季新款哈衣 宝宝短袖连体衣</p>
+									<div class="price">
+								<span class="new-price"><span class="price-n">￥</span><span class="price-num">36.00</span></span>
+								<span class="old-price">￥299</span>
+									</div>
+								</div>
+								</a>
+							</li>
+						</ul>
+					</div>			
+				
+				</div>
+			</div>
+		<div class="loadmore">
+			点击展开更多精彩<span class="iconfont">&#xe60e;</span>
+		</div>
+		
+		<div class="botbg">
+			<img src="images/upload_8c117b025f439e5a9b60d325d7980b20_1920x148.png" />
+		</div>
+		</div>
+	
+	
+		<div class="service-desc">
+			<div class="wrapper">
+				<div class="help-quick-link">
+					<dl class="no-l-border">
+						<dt><i class="iconfont">&#xe604;</i>新手指南</dt>
+						<dd><a href="#">• 注册登录</a></dd>
+						<dd><a href="#">• 抢购商品</a></dd>
+						<dd><a href="#">• 购物车操作</a></dd>
+						<dd><a href="#">• 下单支付</a></dd>
+					</dl>
+					<dl>
+						<dt><i class="iconfont">&#xe615;</i>常见问题</dt>
+						<dd><a href="#">• 热门常见问题</a></dd>
+						<dd><a href="#">• 退货/退款相关</a></dd>
+						<dd><a href="#">• 发货相关</a></dd>
+						<dd><a href="#">• 平台交易规则</a></dd>
+					</dl>
+					<dl>
+						<dt><i class="iconfont">&#xe61e;</i>账号管理</dt>
+						<dd><a href="#">• 会员注册</a></dd>
+						<dd><a href="#">• 密码管理</a></dd>
+						<dd><a href="#">• 投诉举报</a></dd>
+						<dd><a href="#">• 不良信息处理</a></dd>
+					</dl>
+					<dl>
+						<dt><i class="iconfont">&#xe64d;</i>支付相关</dt>
+						<dd><a href="#">• 在线支付</a></dd>
+						<dd><a href="#">• 余额支付</a></dd>
+					</dl>
+					<dl>
+						<dt><i class="iconfont">&#xe605;</i>配送相关</dt>
+						<dd><a href="#">• 配送说明</a></dd>
+						<dd><a href="#">• 物流信息</a></dd>
+						<dd><a href="#">• 验货签收</a></dd>
+					</dl>
+					<dl>
+						<dt><i class="iconfont">&#xe8c7;</i>消费者保障</dt>
+						<dd><a href="#">• 退货政策</a></dd>
+						<dd><a href="#">• 退货流程</a></dd>
+						<dd><a href="#">• 退货方式和实效</a></dd>
+						<dd><a href="#">• 交易安全保障</a></dd>
+						<dd><a href="#">• 保证金制度</a></dd>
+					</dl>
+					<dl class="sns no-r-border">
+						<dt><img src="images/sns_icon3_03.png" /></dt>
+						<dd>
+							<p class="pink">关注社区<br><span class="c-999">优惠特卖早知道</span></p>
+							<a href="#"><img src="images/sns_icon3_06.png" /></a>
+							<a href="#"><img src="images/sns_icon3_08.png" /></a>
+						</dd>
+					</dl>
+				</div>
+				<div class="bottom-img">
+					<a href="#">
+						<img src="images/49433765513667_950x70.png" />
+					</a>
+				</div>
+			</div>
+		</div>
+		
+	<div id="footer">
+		<div class="footer-nav">
+
+	<a href="index.html">首页</a> |
+	<a href="#">关于贝贝</a> |
+	<a href="#">商家入驻</a> |
+	<a href="#">正品保证</a> |
+	<a href="#">人才招聘</a> |
+	<a href="#">联系我们</a> |
+	<a href="#">帮助中心</a> |
+	<a href="#">友情链接</a> |
+	<a href="#">手机客户端</a> |
+	<a href="#">客服在线</a> |
+	<a href="#">贝贝公益</a> |
+	<a href="#">品质健康</a> |
+	<a href="#">育儿社区</a>
+	<a class="hide" href="#">360网站安全检测平台</a>
+
+</div>
+
+<div class="footer-content">
+	<div class="wrapper">
+		<p>浙ICP备12005806号 | 食品流通许可证：SP3301041510054925 | 出版物经营许可证：新出发零字第00086号
+		</p>
+		<p class="mt-8">© 2014-2017
+			<a style="color: #999" href="#">贝贝集团 </a>All Rights Reserved. 客服热线：10107788</p>
+		<div class="mt-20">
+			<a href="#"><img style="width:90px; height:32px" src="images/upload_37b07600c833c0678cfe99a29ab00f1f_127x47.png"></a>&nbsp;&nbsp;&nbsp;
+			<a href="#" target="_blank" rel="nofollow"><img src="images/cxwz.png"></a>
+			<a href="#"><img src="images/hzgs.png"></a>
+		</div>
+	</div>
+	</div>
+	
+	</body>
+</html>
+<script src="js/common.js"></script>
+
+
